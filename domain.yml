@@ -1,0 +1,227 @@
+intents:
+- intent_0
+- intent_1
+- intent_2
+- intent_3
+- intent_4
+- intent_5
+- intent_6
+- intent_7
+- intent_8
+- intent_9
+- intent_10
+- intent_11
+- intent_12
+- intent_13
+- intent_14
+- intent_15
+- intent_16
+- intent_17
+- out_of_scope
+
+
+
+actions:
+  - action_best_matching_suggestions
+  - action_fallback
+
+
+responses:
+ 
+  utter_out_of_scope:
+    - text: "Sorry this is out of my knowledge Can you please elaborate more deeper to give best output chat with us "
+        
+
+
+
+
+  utter_0:
+  - text: 'The group action feature allows you to perform actions on multiple assets
+      at one time. The following instructions will assist you on how to set up and
+      then return while using a group action.NOTE: Your specific groups will likely
+      differ than those shown in the screenshots below.'
+  utter_1:
+  - text: Use the following instructions to set up a group action.1. SelectAssetsfrom
+      yourGroupmenu.2. Select the asset record where you wish to set up a group action.3.
+      SelectActions, then selectGroup Action.4. Select the action you wish to make.A
+      box will display letting you know that the group action is complete.5. ClickSave
+      and Closeto complete the process.
+  utter_10:
+  - text: Assets are resources with economic value owned or controlled by an individual,
+      corporation or country. There is an expectation that these assets will provide
+      a future benefit. Assets can be almost anything and can consist of laptops,
+      vehicles, pieces of equipment, and so forth.An asset typically has a unique
+      identifier to separate it from other assets, such as being in one location,
+      having one owner, and so forth. For instance, you can think of it as a one to
+      one relationship.
+  utter_11:
+  - text: Inventory are different than assets. Inventory consists of raw materials,
+      work-in-process products, and finished goods that are considered to be the portion
+      of a business's assets that are ready or will be ready for sale.The key point
+      about inventory is that it has a multiple to one relationship. In other words,
+      inventory is quantity based. For instance, you can have one type of inventory
+      item but have multiples of it, and the number would be reduced, or increased
+      at varying points throughout its usefulness to the business.Pretty simple, huh?
+      Proceed toConfigurationto now delve into the fun stuff!
+  utter_12:
+  - text: 'Here at Asset Panda, the configuration from an asset record to an inventory
+      record can be quite different. The following screenshot provides an example
+      of what an inventory record and its fields of information typically consists
+      of.NOTE: Keep in mind that you can create as many custom fields of info you
+      wish to create.'
+  utter_13:
+  - text: You just got a peek into a new group. We'll guide you through the configuration
+      process so you can create one of your own.To create this group and its fields:1.
+      Click to select your settingsicon, and then selectGroup Settings.2. ClickAdd
+      New Group.3. Provide theNameof your choice (we recommend and are usingConsumablesin
+      our example), and then clickSave.Once you clickSave, aFieldssection displays
+      on your screen, allowing you to begin to add new fields.4. Navigate to theFieldssection,
+      and then clickAdd New Field.5. Create and add the new field(s) you wish to add.Keep
+      in mind that the selections on this screen change depending on what you choose.
+      You would of course repeat the field creation process for all new fields you
+      wish to create. (We're using ourQuantity on Handfield for our example below.)6.
+      ClickSave and Close.Just like that, your new field has been created and saved.
+  utter_14:
+  - text: Notifications are good because they keep us on track and in the know, especially
+      with our busy schedules. Asset Panda realizes this and provides you with the
+      ability to be notified whenever an item and its quantity reach a breaking point
+      (set by you!).For example, say you've created a numeric field type forQuantity
+      on Hand(shown below).1. Navigate to theQuantity on Handfield, and then selectNotifications.2.
+      ClickNew Notification.3. Enter a name for your notification. (We've usedQuantity
+      is Lowfor our example.)4. Set theSend onfield toNumeric.5. Decide yourNotificationtype.SelectingEmailwill
+      require you to enterUsers who can view notificationand aSubject.6. Set theValue
+      isasLess thanand then select your less than value number.You could also opt
+      to select another field from the second drop-down menu rather than a specific
+      number. It really all depends on the fields that you have created. For instance,
+      we have aQuantity Minimumfield (shown in the first screenshot of this article).
+      We could have selected that rather than an actual number.7. Add any other options
+      you wish to add to your new notification.8. ClickSaveto save it.
+  utter_15:
+  - text: 'By this point, you''ve likely created your fields of information about
+      an inventory item. Now, it''s time for the next step which is to create the
+      functions to quickly increase or reduce the quantities on a daily basis.1. Click
+      the settingsicon, and then selectGroup Settings.2. Locate your new group (we''re
+      using our new exampleConsumablesgroup), and then click theActionslink.3. ClickAdd
+      New.4. Provide a name for yourAction(we''ve usedAdd Inventoryas our example),
+      and then clickSave.We''ll now create an action that will remove a quantity from
+      a specific item. Keep in mind that you can have as many fields as you like within
+      the action but for our example, we will focus on when an item is being removed
+      (by having a date time stamp to automatically capture this) and by how many
+      (with a numeric field for the quantity removed).5. Scroll down to yourFieldssection
+      and locate theChange Fieldssection.6. ClickNew Change Field.Our next goal is
+      to let Asset Panda remove quantities from the quantity we have on-hand. Just
+      so you know, the drop-down options contained within theCalculation optionsfields
+      are pulling from fields contained within the group (theConsumablesgroup in our
+      example). (SeeCreate groups and fieldsif you need help or a reminder for how
+      to create groups and fields.)Group:Select the Group that is being changed.Field:Select
+      the Field that is being changed (pulling from the Group and the Fields contained
+      within that Group).Change Type:Select how the field needs to be changed. (We''ve
+      selectedAction change update field, which directs our system to take the existing
+      quantity on hand and reduce its value.)Calculation options: We''ve selected
+      from two of our existingConsumablesGroup fields,Quantity on HandandQuantity
+      Removed. We selected the (-), asking the new Change Field to remove the Quantity
+      Removed from the Quantity on Hand.If a user does not have access to write to
+      this field, should this field be updated:Users aren''t usually automatically
+      given the ability to manually change certain fields. We recommend setting this
+      toYes.7. ClickSave and Closeonce you have finished creating your new Change
+      Field. Remember, your own preferences and settings may or may not match those
+      we''ve used in our examples.'
+  utter_16:
+  - text: So we've got our functions and parameters set. Now, we'll add some data.Just
+      as with assets, you can manually add an inventory record via both the browser
+      or mobile, or by importing through the browser.To add a new record:1. Navigate
+      to yourConsumablesgroup, and then clickAdd New.The fields shown on this screen
+      are pulling from the fields you've added to yourConsumablesgroup. As a result,
+      yours will likely differ from what you see in our example below. (SeeCreate
+      groups and fieldsif you a refresher with adding more fields.)2. Enter the information
+      you wish to enter into your fields, and then clickSave.You will receive the
+      message that your record was successfully saved. Click on any of the pencil
+      icons to make any needed changes.You can now perform an action.3. Click theActionsbutton,
+      and then select the action you wish to perform.4. Enter the applicable information,
+      and then clickSave and Close.This changes the amount shown in your inventory.
+      The history of this action can also be pulled into a report.
+  utter_17:
+  - text: Now that you've set actions to reduce inventory items, you can also create
+      a report to summarize which items were reduced over time.To create such a report:1.
+      ClickReportsfrom your dashboard or clickTools, and then selectReports.2. Scroll
+      down to, and then selectAction Reports.3. ClickAdd Action Report.4. You'll now
+      need to set your parameters:Name:Enter the name you wish to give your report.
+      (We've usedRemoved Consumables Login our example but of course you can use whatever
+      name you wish to use.)Group:Set the report to pull from yourConsumablesgroup
+      (or whatever you named your specific group, if different).Select Action:Set
+      the report to pull from the removal action you created (our example is from
+      ourRemove Inventoryaction).Action Objects:Set the report to pull only consumable
+      items via theOnly objects that have had this actionoption. In this case, it
+      is objects that have had the removal action performed.5. Select the fields you
+      wish to see inside of your report.The selected fields will display on the right
+      hand box so you can keep track of what your report will include. We selected
+      the fields that provide us with information about the item (SKU, etc.) but also
+      questions from the action itself (Date RemovedandQuantity on Hand, etc.).You
+      can customize your report to pull from all time or, you can get really specific
+      by applying filters (like date ranges to see what was taken out in a certain
+      time frame, or only certain consumable items).
+  utter_2:
+  - text: Use the following instructions to return a group action.1. SelectAssetsfrom
+      yourGroupmenu.2. Select the asset record you wish to return the group action.3.
+      SelectActions, then selectGroup Return.4. Select the return action you wish
+      to make.A box will display letting you know that the group return is complete.5.
+      ClickSave and Closeto complete the process.Limit Actions by Field DataTheLimit
+      Actions byfeature provides you with the ability to limit an action by any field
+      in the related group. For instance, you can now add a limitation to your action
+      so that the action only shows up for assets that have a specific color (text
+      field) of blue.To utilize this feature:1. Click to select your settingsicon,
+      and then selectGroup Settings.2. Select theActionslink for the preferred group.3.
+      Select the action, and then click theAdd Newbutton or theEditlink (depending
+      on whether you are creating a new action or editing an existing action).4. Scroll
+      down to theLimit Actions bysection, and then click theAdd new limitationlink
+      to set your limitation(s).
+  utter_3:
+  - text: To edit or modify an existing group:1.Navigate to yourGroupspage, and then
+      select theEditlink of the group you wish to modify.TheEditing Groups and their
+      Fieldspage displays, allowing you to make all desired edits.Refer toAdd New
+      Groupsfor more information on the fields contained within theEditing Groups
+      and their Fieldspage.
+  utter_4:
+  - text: Add GroupsAdd New FieldsCustom PermissionsAttachmentsImagesDocuments, Voice
+      Notes, and Videos
+  utter_5:
+  - text: If you've ever had to run scans on multiple objects, you know it can be
+      a painstakingly long process. This is exactly why we offer the option to run
+      scans on multiple objects; all at once, while using your own scanner.The first
+      thing you'll need to do is turn on the group scan feature within your account
+      so...let's dive in. Shall we?
+  utter_6:
+  - text: 1. Select your settingsicon, and then clickCompany Settings.2. Scroll toIntegration
+      Options.3. SelectYesfrom theAre you using a 3rd party bar code scanning device
+      with the Asset Panda web interface?
+  utter_7:
+  - text: 4. ClickSave.
+  utter_8:
+  - text: So you're scanner is ready and you're ready to scan. (SeeHow do I enable
+      a group scan?above if you haven't already done so.)1. Select yourAssetgroup.2.
+      SelectActions, and then selectGroup Scan.3. You'll notice a cursor within theGroup
+      Scan assetsbox. This means that it's ready to scan, so scan away!The assets
+      you're scanning begin to display within the box.4. ClickComplete Scanwhen you've
+      scanned all of your barcodes.You'll then see a list of the assets you just scanned.5.
+      Uncheck to deselect any assets that you may have changed your mind about scanning
+      (if any).6. ClickUse These Assetsonce you're ready to rock and roll.You can
+      now perform any action you need with your newly scanned assets!
+  utter_9:
+  - text: 'Asset Panda is highly configurable when it comes to keeping track of assets
+      and workflow management, and helps you to manage your workflow from the beginning
+      to the end of an asset''s life cycle.You''ll find the following topics covered
+      in this article (click on any of the links to be taken straight there, if you
+      wish):Create Groups and FieldsCreate NotificationsQuantity ChangesData and UseReportsFirst
+      things first. A bit about inventory management is that it is different than
+      asset management. Although the term for inventory and assets has been used interchangeably,
+      there are key differences to be noted.NOTE: Keep in mind that our screenshots
+      are examples. Yours may be the same or it may differ. We recommend you provide
+      the names and use verbiage that best suits your organization. It''s okay. We
+      won''t hold it against you.Let''s get started with a quick summary of assets
+      and inventory:'
+  
+  
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+version: '3.1'

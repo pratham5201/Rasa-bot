@@ -1,0 +1,89 @@
+version: "3.1"
+
+nlu:
+- intent: intent_0
+  examples: |
+    - Group Actions and Returns
+
+- intent: intent_1
+  examples: |
+    - Create a group action
+
+- intent: intent_2
+  examples: |
+    - Create a group action return
+
+- intent: intent_3
+  examples: |
+    - Edit Groups
+    - how to edit groups
+    - 
+
+- intent: intent_4
+  examples: |
+    - Related Topics
+
+- intent: intent_5
+  examples: |
+    - Group Scan
+
+- intent: intent_6
+  examples: |
+    - Enable a group scan
+
+- intent: intent_7
+  examples: |
+    - 
+
+- intent: intent_8
+  examples: |
+    - Perform a group scan
+
+- intent: intent_9
+  examples: |
+    - Consumables and Inventory Management
+
+- intent: intent_10
+  examples: |
+    - Assets 
+
+- intent: intent_11
+  examples: |
+    - Inventory
+    
+
+- intent: intent_12
+  examples: |
+    - Configuration
+
+- intent: intent_13
+  examples: |
+    - Create groups and fields
+
+- intent: intent_14
+  examples: |
+    - Create notifications
+
+- intent: intent_15
+  examples: |
+    - Quantity Changes
+
+- intent: intent_16
+  examples: |
+    - Data and Use
+
+- intent: intent_17
+  examples: |
+    - Reports
+
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+
+    
+
+
+
